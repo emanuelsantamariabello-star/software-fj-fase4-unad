@@ -1,0 +1,30 @@
+[OK] 01 Cliente válido: Cliente CL001: Laura Gomez
+[OK] 02 Cliente válido: Cliente CL002: Carlos Ruiz
+[CONTROLADO] 03 Cliente duplicado: Cliente CL001 ya registrado.
+[OK] 04 Sala válida: Sala Sala empresarial, capacidad 12, tarifa/hora 80000
+[OK] 05 Equipo válido: Equipo Proyector, stock 2, tarifa/hora 25000
+[OK] 06 Asesoría válida: Asesoría Analisis de datos con Lina Perez, tarifa/hora 95000
+[CONTROLADO] 07 Servicio duplicado: Servicio SA001 ya registrado.
+[OK] 08 Reserva sala correcta: Reserva RE001: cliente=CL001, servicio=SA001, estado=CREADA
+[CONTROLADO] 09 Reserva equipo incorrecta por stock: Se solicitan 9, disponibles 2.
+[OK] 10 Reserva asesoría correcta: Reserva RE003: cliente=CL002, servicio=AS001, estado=CREADA
+[CONTROLADO] 11 Reserva cliente inexistente: Cliente CL999 inexistente.
+[CONTROLADO] 12 Reserva con duración inválida: El importe debe ser finito y positivo.
+[OK] 13 Confirmación de sala: 160000.00
+[OK] 14 Procesamiento de sala: Acción completada
+[CONTROLADO] 15 Cancelación imposible de procesada: Solo se cancelan reservas creadas o confirmadas.
+[OK] 16 Confirmación asesoría: 142500.00
+[OK] 17 Cancelación asesoría: Acción completada
+[OK] 18 Reserva equipo válida: Reserva RE006: cliente=CL001, servicio=EQ001, estado=CREADA
+[OK] 19 Confirmación equipo con impuesto y descuento: 107100.00
+[CONTROLADO] 20 Reserva sin servicio: Servicio ZZ999 inexistente.
+[CONTROLADO] 21 Cliente con correo inválido: El correo electrónico no es válido.
+[CONTROLADO] 22 Servicio con tarifa negativa: El importe debe ser finito y positivo.
+
+RESUMEN FINAL
+  operaciones: 22
+  exitos: 13
+  errores_controlados: 9
+  clientes: 2
+  servicios: 3
+  reservas: 3

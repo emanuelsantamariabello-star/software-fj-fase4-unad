@@ -1,0 +1,52 @@
+test_capacidad_superada (test_software_fj.PruebasModelo.test_capacidad_superada) ... ok
+test_cliente_duplicado (test_software_fj.PruebasModelo.test_cliente_duplicado) ... ok
+test_cliente_encapsulacion_correo_normalizado (test_software_fj.PruebasModelo.test_cliente_encapsulacion_correo_normalizado) ... ok
+test_colecciones_de_solo_lectura (test_software_fj.PruebasModelo.test_colecciones_de_solo_lectura) ... ok
+test_correo_invalido_excepcion (test_software_fj.PruebasModelo.test_correo_invalido_excepcion) ... ok
+test_costo_parametros_invalidos (test_software_fj.PruebasModelo.test_costo_parametros_invalidos) ... ok
+test_demo_mas_diez_operaciones_y_continua (test_software_fj.PruebasModelo.test_demo_mas_diez_operaciones_y_continua) ... ok
+test_duracion_cero (test_software_fj.PruebasModelo.test_duracion_cero) ... ok
+test_ejecutar_seguro_controla_error_y_genera_log (test_software_fj.PruebasModelo.test_ejecutar_seguro_controla_error_y_genera_log) ... ok
+test_error_de_servicio_desactivado_al_confirmar (test_software_fj.PruebasModelo.test_error_de_servicio_desactivado_al_confirmar) ... ok
+test_flujo_completo_reserva (test_software_fj.PruebasModelo.test_flujo_completo_reserva) ... ok
+test_no_admite_importes_no_finitos (test_software_fj.PruebasModelo.test_no_admite_importes_no_finitos) ... ok
+test_no_puede_instanciar_clases_abstractas (test_software_fj.PruebasModelo.test_no_puede_instanciar_clases_abstractas) ... ok
+test_registro_error_inesperado_y_continuidad (test_software_fj.PruebasModelo.test_registro_error_inesperado_y_continuidad) ... ok
+test_reserva_cancelada_no_confirma (test_software_fj.PruebasModelo.test_reserva_cancelada_no_confirma) ... ok
+test_reserva_duplicada (test_software_fj.PruebasModelo.test_reserva_duplicada) ... ok
+test_servicio_faltante_y_encadenamiento_excepcion (test_software_fj.PruebasModelo.test_servicio_faltante_y_encadenamiento_excepcion) ... ok
+test_servicio_sin_disponibilidad (test_software_fj.PruebasModelo.test_servicio_sin_disponibilidad) ... ok
+test_servicio_tarifa_negativa (test_software_fj.PruebasModelo.test_servicio_tarifa_negativa) ... ok
+test_servicios_son_polimorficos (test_software_fj.PruebasModelo.test_servicios_son_polimorficos) ... ok
+test_telefono_invalido_excepcion (test_software_fj.PruebasModelo.test_telefono_invalido_excepcion) ... ok
+test_tipo_invalido_asistentes (test_software_fj.PruebasModelo.test_tipo_invalido_asistentes) ... ok
+test_validacion_del_cliente_al_modificar_propiedad (test_software_fj.PruebasModelo.test_validacion_del_cliente_al_modificar_propiedad) ... ok
+test_variante_costo_con_impuesto_descuento (test_software_fj.PruebasModelo.test_variante_costo_con_impuesto_descuento) ... ok
+test_variante_porcentajes_cero_y_maximo (test_software_fj.PruebasModelo.test_variante_porcentajes_cero_y_maximo) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.012s
+
+OK
+[OK] 01 Cliente válido: Cliente CL001: Laura Gomez
+[OK] 02 Cliente válido: Cliente CL002: Carlos Ruiz
+[CONTROLADO] 03 Cliente duplicado: Cliente CL001 ya registrado.
+[OK] 04 Sala válida: Sala Sala empresarial, capacidad 12, tarifa/hora 80000
+[OK] 05 Equipo válido: Equipo Proyector, stock 2, tarifa/hora 25000
+[OK] 06 Asesoría válida: Asesoría Analisis de datos con Lina Perez, tarifa/hora 95000
+[CONTROLADO] 07 Servicio duplicado: Servicio SA001 ya registrado.
+[OK] 08 Reserva sala correcta: Reserva RE001: cliente=CL001, servicio=SA001, estado=CREADA
+[CONTROLADO] 09 Reserva equipo incorrecta por stock: Se solicitan 9, disponibles 2.
+[OK] 10 Reserva asesoría correcta: Reserva RE003: cliente=CL002, servicio=AS001, estado=CREADA
+[CONTROLADO] 11 Reserva cliente inexistente: Cliente CL999 inexistente.
+[CONTROLADO] 12 Reserva con duración inválida: El importe debe ser finito y positivo.
+[OK] 13 Confirmación de sala: 160000.00
+[OK] 14 Procesamiento de sala: Acción completada
+[CONTROLADO] 15 Cancelación imposible de procesada: Solo se cancelan reservas creadas o confirmadas.
+[OK] 16 Confirmación asesoría: 142500.00
+[OK] 17 Cancelación asesoría: Acción completada
+[OK] 18 Reserva equipo válida: Reserva RE006: cliente=CL001, servicio=EQ001, estado=CREADA
+[OK] 19 Confirmación equipo con impuesto y descuento: 107100.00
+[CONTROLADO] 20 Reserva sin servicio: Servicio ZZ999 inexistente.
+[CONTROLADO] 21 Cliente con correo inválido: El correo electrónico no es válido.
+[CONTROLADO] 22 Servicio con tarifa negativa: El importe debe ser finito y positivo.
